@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 500" role="img" aria-label="Before and after diagram showing the difference between inline styles in each HTML file versus a shared style.css file that all pages link to">
+  <title>Separation of concerns: inline styles vs. shared stylesheet</title>
+  <desc>Left side shows three HTML files each containing their own style blocks with inconsistent colors. Right side shows the same three HTML files linking to one shared style.css file, with consistent styling across all pages.</desc>
+
+  <defs>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0078D4" />
+    </marker>
+  </defs>
+
+  <style>
+    .heading { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 20px; font-weight: 700; fill: #091F2C; text-anchor: middle; }
+    .heading-sub { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 13px; font-weight: 400; fill: #555555; text-anchor: middle; }
+    .file-label { font-family: 'Consolas', 'Courier New', monospace; font-size: 13px; font-weight: 700; fill: #091F2C; }
+    .code-text { font-family: 'Consolas', 'Courier New', monospace; font-size: 11px; fill: #333333; }
+    .code-highlight { font-family: 'Consolas', 'Courier New', monospace; font-size: 11px; fill: #C73ECC; font-weight: 600; }
+    .code-good { font-family: 'Consolas', 'Courier New', monospace; font-size: 11px; fill: #0078D4; font-weight: 600; }
+    .warn-text { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 11px; fill: #73262F; font-weight: 600; text-anchor: middle; }
+    .good-text { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 11px; fill: #2A446F; font-weight: 600; text-anchor: middle; }
+    .file-box { fill: #FFFFFF; stroke: #CCCCCC; stroke-width: 1.5; rx: 6; ry: 6; }
+    .file-tab { rx: 4; ry: 4; }
+    .css-box { fill: #FFFFFF; stroke: #0078D4; stroke-width: 2.5; rx: 10; ry: 10; }
+    .vs-arrow { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 36px; font-weight: 700; fill: #0078D4; text-anchor: middle; dominant-baseline: central; }
+  </style>
+
+  <!-- Background -->
+  <rect width="960" height="500" fill="#FFFFFF" />
+
+  <!-- ===== LEFT SIDE: BEFORE ===== -->
+  <text class="heading" x="210" y="36">BEFORE</text>
+  <text class="heading-sub" x="210" y="54">Each page has its own styles mixed in</text>
+
+  <!-- File 1: index.html -->
+  <rect class="file-tab" x="30" y="72" width="100" height="22" fill="#F4364C" opacity="0.15" stroke="#F4364C" stroke-width="1"/>
+  <text class="file-label" x="38" y="87">index.html</text>
+  <rect class="file-box" x="30" y="94" width="360" height="100" stroke="#F4364C" stroke-width="1.5"/>
+  <text class="code-text" x="42" y="114">&lt;head&gt;</text>
+  <text class="code-text" x="54" y="130">&lt;style&gt;</text>
+  <text class="code-highlight" x="66" y="146">body { background: #FFE0E0; }</text>
+  <text class="code-highlight" x="66" y="162">h1 { color: red; }</text>
+  <text class="code-text" x="54" y="178">&lt;/style&gt;</text>
+
+  <!-- File 2: about.html -->
+  <rect class="file-tab" x="30" y="210" width="100" height="22" fill="#F4364C" opacity="0.15" stroke="#F4364C" stroke-width="1"/>
+  <text class="file-label" x="38" y="225">about.html</text>
+  <rect class="file-box" x="30" y="232" width="360" height="100" stroke="#F4364C" stroke-width="1.5"/>
+  <text class="code-text" x="42" y="252">&lt;head&gt;</text>
+  <text class="code-text" x="54" y="268">&lt;style&gt;</text>
+  <text class="code-highlight" x="66" y="284">body { background: #E0FFE0; }</text>
+  <text class="code-highlight" x="66" y="300">h1 { color: green; }</text>
+  <text class="code-text" x="54" y="316">&lt;/style&gt;</text>
+
+  <!-- File 3: favorites.html -->
+  <rect class="file-tab" x="30" y="348" width="120" height="22" fill="#F4364C" opacity="0.15" stroke="#F4364C" stroke-width="1"/>
+  <text class="file-label" x="38" y="363">favorites.html</text>
+  <rect class="file-box" x="30" y="370" width="360" height="100" stroke="#F4364C" stroke-width="1.5"/>
+  <text class="code-text" x="42" y="390">&lt;head&gt;</text>
+  <text class="code-text" x="54" y="406">&lt;style&gt;</text>
+  <text class="code-highlight" x="66" y="422">body { background: #E0E0FF; }</text>
+  <text class="code-highlight" x="66" y="438">h1 { color: blue; }</text>
+  <text class="code-text" x="54" y="454">&lt;/style&gt;</text>
+
+  <!-- Warning labels -->
+  <text class="warn-text" x="210" y="492">⚠ Different colors on every page!</text>
+
+  <!-- ===== CENTER ARROW ===== -->
+  <text class="vs-arrow" x="480" y="260">→</text>
+
+  <!-- ===== RIGHT SIDE: AFTER ===== -->
+  <text class="heading" x="740" y="36">AFTER</text>
+  <text class="heading-sub" x="740" y="54">All pages share one stylesheet</text>
+
+  <!-- Shared style.css box -->
+  <rect class="css-box" x="620" y="72" width="240" height="120" />
+  <rect class="file-tab" x="620" y="72" width="90" height="22" fill="#0078D4" opacity="0.15" stroke="#0078D4" stroke-width="1"/>
+  <text class="file-label" x="628" y="87" style="fill: #0078D4;">style.css</text>
+  <text class="code-good" x="636" y="114">body {</text>
+  <text class="code-good" x="648" y="130">background: #F0F4FF;</text>
+  <text class="code-good" x="636" y="146">}</text>
+  <text class="code-good" x="636" y="162">h1 { color: #091F2C; }</text>
+
+  <!-- File 1: index.html (linked) -->
+  <rect class="file-tab" x="620" y="218" width="100" height="22" fill="#0078D4" opacity="0.1" stroke="#0078D4" stroke-width="1"/>
+  <text class="file-label" x="628" y="233">index.html</text>
+  <rect class="file-box" x="620" y="240" width="240" height="48" stroke="#0078D4" stroke-width="1.5"/>
+  <text class="code-good" x="632" y="260">&lt;link rel="stylesheet"</text>
+  <text class="code-good" x="644" y="276">href="style.css"&gt;</text>
+
+  <!-- File 2: about.html (linked) -->
+  <rect class="file-tab" x="620" y="302" width="100" height="22" fill="#0078D4" opacity="0.1" stroke="#0078D4" stroke-width="1"/>
+  <text class="file-label" x="628" y="317">about.html</text>
+  <rect class="file-box" x="620" y="324" width="240" height="48" stroke="#0078D4" stroke-width="1.5"/>
+  <text class="code-good" x="632" y="344">&lt;link rel="stylesheet"</text>
+  <text class="code-good" x="644" y="360">href="style.css"&gt;</text>
+
+  <!-- File 3: favorites.html (linked) -->
+  <rect class="file-tab" x="620" y="386" width="120" height="22" fill="#0078D4" opacity="0.1" stroke="#0078D4" stroke-width="1"/>
+  <text class="file-label" x="628" y="401">favorites.html</text>
+  <rect class="file-box" x="620" y="408" width="240" height="48" stroke="#0078D4" stroke-width="1.5"/>
+  <text class="code-good" x="632" y="428">&lt;link rel="stylesheet"</text>
+  <text class="code-good" x="644" y="444">href="style.css"&gt;</text>
+
+  <!-- Connection: vertical spine on the right, branching into each file box -->
+  <!-- Spine: from css-box right edge across to spine, then down -->
+  <line x1="860" y1="132" x2="880" y2="132" stroke="#0078D4" stroke-width="1.5" />
+  <line x1="880" y1="132" x2="880" y2="432" stroke="#0078D4" stroke-width="1.5" />
+  <!-- Branch to file 1 (center at y=264) -->
+  <line x1="880" y1="264" x2="860" y2="264" stroke="#0078D4" stroke-width="1.5" marker-end="url(#arrowBlue)" />
+  <!-- Branch to file 2 (center at y=348) -->
+  <line x1="880" y1="348" x2="860" y2="348" stroke="#0078D4" stroke-width="1.5" marker-end="url(#arrowBlue)" />
+  <!-- Branch to file 3 (center at y=432) -->
+  <line x1="880" y1="432" x2="860" y2="432" stroke="#0078D4" stroke-width="1.5" marker-end="url(#arrowBlue)" />
+
+  <!-- Good label -->
+  <text class="good-text" x="740" y="492">✓ Change style.css once → every page updates!</text>
+</svg>

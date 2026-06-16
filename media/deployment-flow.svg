@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 320" role="img" aria-label="Flow diagram showing four steps: write code on your device, push to GitHub, GitHub Pages builds it, and your site is live on the internet">
+  <title>How your website gets to the internet</title>
+  <desc>A horizontal flow diagram with four numbered steps showing the path from writing HTML and CSS on your device to having a live website at yourname.github.io</desc>
+
+  <style>
+    .box { fill: #FFFFFF; stroke: #0078D4; stroke-width: 2.5; rx: 14; ry: 14; }
+    .label { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-size: 17px; font-weight: 700; fill: #091F2C; text-anchor: middle; }
+    .sub { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-size: 13px; font-weight: 400; fill: #444444; text-anchor: middle; }
+    .num-circle { fill: #0078D4; }
+    .num-text { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 14px; font-weight: 700; fill: #FFFFFF; text-anchor: middle; dominant-baseline: central; }
+    .arrow { fill: #0078D4; }
+    .icon { fill: #0078D4; }
+  </style>
+
+  <!-- Background -->
+  <rect width="960" height="320" fill="#FFFFFF" />
+
+  <!-- === Step 1: On Your Device === -->
+  <rect class="box" x="20" y="70" width="190" height="180" />
+  <circle class="num-circle" cx="42" cy="92" r="14" />
+  <text class="num-text" x="42" y="92">1</text>
+  <!-- Laptop icon -->
+  <g transform="translate(115,120)" class="icon">
+    <rect x="-28" y="-20" width="56" height="38" rx="4" fill="none" stroke="#0078D4" stroke-width="2.5"/>
+    <line x1="-34" y1="22" x2="34" y2="22" stroke="#0078D4" stroke-width="2.5"/>
+    <line x1="-20" y1="22" x2="-24" y2="30" stroke="#0078D4" stroke-width="2"/>
+    <line x1="20" y1="22" x2="24" y2="30" stroke="#0078D4" stroke-width="2"/>
+    <line x1="-24" y1="30" x2="24" y2="30" stroke="#0078D4" stroke-width="2.5"/>
+  </g>
+  <text class="label" x="115" y="185">ON YOUR</text>
+  <text class="label" x="115" y="205">DEVICE</text>
+  <text class="sub" x="115" y="230">Write HTML &amp; CSS</text>
+
+  <!-- Arrow 1→2 -->
+  <polygon class="arrow" points="270,160 248,172 248,167 222,167 222,153 248,153 248,148" />
+
+  <!-- === Step 2: Push to GitHub === -->
+  <rect class="box" x="275" y="70" width="190" height="180" />
+  <circle class="num-circle" cx="297" cy="92" r="14" />
+  <text class="num-text" x="297" y="92">2</text>
+  <!-- GitHub-style icon (simplified branch) -->
+  <g transform="translate(370,130)" class="icon">
+    <circle cx="0" cy="-16" r="6" fill="none" stroke="#0078D4" stroke-width="2.5"/>
+    <circle cx="0" cy="16" r="6" fill="none" stroke="#0078D4" stroke-width="2.5"/>
+    <circle cx="16" cy="-4" r="6" fill="none" stroke="#0078D4" stroke-width="2.5"/>
+    <line x1="0" y1="-10" x2="0" y2="10" stroke="#0078D4" stroke-width="2.5"/>
+    <path d="M 16,-10 Q 16,-20 0,-10" fill="none" stroke="#0078D4" stroke-width="2.5"/>
+  </g>
+  <text class="label" x="370" y="185">PUSH TO</text>
+  <text class="label" x="370" y="205">GITHUB</text>
+  <text class="sub" x="370" y="230">Commit your code</text>
+
+  <!-- Arrow 2→3 -->
+  <polygon class="arrow" points="525,160 503,172 503,167 477,167 477,153 503,153 503,148" />
+
+  <!-- === Step 3: GitHub Pages Builds It === -->
+  <rect class="box" x="530" y="70" width="190" height="180" />
+  <circle class="num-circle" cx="552" cy="92" r="14" />
+  <text class="num-text" x="552" y="92">3</text>
+  <!-- Gear icon -->
+  <g transform="translate(625,128)" class="icon">
+    <circle cx="0" cy="0" r="8" fill="none" stroke="#0078D4" stroke-width="2.5"/>
+    <line x1="0" y1="-18" x2="0" y2="-11" stroke="#0078D4" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="0" y1="11" x2="0" y2="18" stroke="#0078D4" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="-18" y1="0" x2="-11" y2="0" stroke="#0078D4" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="11" y1="0" x2="18" y2="0" stroke="#0078D4" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="-12.7" y1="-12.7" x2="-7.8" y2="-7.8" stroke="#0078D4" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="7.8" y1="7.8" x2="12.7" y2="12.7" stroke="#0078D4" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="12.7" y1="-12.7" x2="7.8" y2="-7.8" stroke="#0078D4" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="-7.8" y1="7.8" x2="-12.7" y2="12.7" stroke="#0078D4" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+  <text class="label" x="625" y="185">GITHUB PAGES</text>
+  <text class="label" x="625" y="205">BUILDS IT</text>
+  <text class="sub" x="625" y="230">Automatic deployment</text>
+
+  <!-- Arrow 3→4 -->
+  <polygon class="arrow" points="780,160 758,172 758,167 732,167 732,153 758,153 758,148" />
+
+  <!-- === Step 4: Live on the Internet === -->
+  <rect class="box" x="785" y="70" width="155" height="180" />
+  <circle class="num-circle" cx="807" cy="92" r="14" />
+  <text class="num-text" x="807" y="92">4</text>
+  <!-- Globe icon -->
+  <g transform="translate(862,128)" class="icon">
+    <circle cx="0" cy="0" r="16" fill="none" stroke="#0078D4" stroke-width="2.5"/>
+    <ellipse cx="0" cy="0" rx="8" ry="16" fill="none" stroke="#0078D4" stroke-width="1.8"/>
+    <line x1="-16" y1="0" x2="16" y2="0" stroke="#0078D4" stroke-width="1.8"/>
+    <path d="M -15,-8 Q 0,-5 15,-8" fill="none" stroke="#0078D4" stroke-width="1.5"/>
+    <path d="M -15,8 Q 0,5 15,8" fill="none" stroke="#0078D4" stroke-width="1.5"/>
+  </g>
+  <text class="label" x="862" y="185">LIVE ON THE</text>
+  <text class="label" x="862" y="205">INTERNET!</text>
+  <text class="sub" x="862" y="230">yourname.github.io</text>
+
+  <!-- Bottom annotation -->
+  <text style="font-family: 'Segoe UI', system-ui, sans-serif; font-size: 13px; font-style: italic; fill: #555555; text-anchor: middle;" x="480" y="298">This happens every time you commit a change — your site updates automatically!</text>
+</svg>

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 400" role="img" aria-label="Example wireframe sketch of a website homepage showing a navigation bar, heading, paragraph area, image placeholder, and footer">
+  <title>Example wireframe: plan your page on paper first</title>
+  <desc>A hand-drawn-style wireframe showing a website layout with labeled sections: a navigation bar at the top with three links, a large heading, a paragraph text area, an image placeholder box, and a footer at the bottom.</desc>
+
+  <style>
+    .wireframe-border { fill: #FFFFFF; stroke: #091F2C; stroke-width: 2; rx: 4; ry: 4; }
+    .section-box { fill: none; stroke: #0078D4; stroke-width: 1.5; stroke-dasharray: 6,3; rx: 4; ry: 4; }
+    .section-label { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 12px; font-weight: 600; fill: #0078D4; text-anchor: middle; }
+    .wireframe-line { stroke: #BBBBBB; stroke-width: 8; stroke-linecap: round; }
+    .wireframe-line-thin { stroke: #CCCCCC; stroke-width: 5; stroke-linecap: round; }
+    .wireframe-line-text { stroke: #DDDDDD; stroke-width: 4; stroke-linecap: round; }
+    .nav-item { fill: #E8E6DF; rx: 4; ry: 4; }
+    .nav-text { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 11px; fill: #555555; text-anchor: middle; font-weight: 600; }
+    .image-placeholder { fill: #F4F3F5; stroke: #CCCCCC; stroke-width: 1.5; rx: 4; ry: 4; }
+    .image-x { stroke: #CCCCCC; stroke-width: 1; }
+    .image-label { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 11px; fill: #999999; text-anchor: middle; }
+    .callout { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 11px; fill: #73262F; font-weight: 600; }
+    .callout-line { stroke: #F4364C; stroke-width: 1; stroke-dasharray: 3,2; }
+    .footer-bg { fill: #E8E6DF; }
+    .page-title { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 16px; font-weight: 700; fill: #091F2C; text-anchor: middle; }
+  </style>
+
+  <!-- Background -->
+  <rect width="620" height="400" fill="#F4F3F5" />
+
+  <!-- Title above wireframe -->
+  <text class="page-title" x="290" y="24">Example wireframe — sketch this on paper!</text>
+
+  <!-- Page outline -->
+  <rect class="wireframe-border" x="60" y="40" width="420" height="340" />
+
+  <!-- === NAV BAR === -->
+  <rect x="60" y="40" width="420" height="40" fill="#E8E6DF" stroke="#091F2C" stroke-width="2" rx="4" ry="4" />
+  <rect class="nav-item" x="80" y="50" width="60" height="22" />
+  <text class="nav-text" x="110" y="65">Home</text>
+  <rect class="nav-item" x="150" y="50" width="60" height="22" />
+  <text class="nav-text" x="180" y="65">About</text>
+  <rect class="nav-item" x="220" y="50" width="80" height="22" />
+  <text class="nav-text" x="260" y="65">Favorites</text>
+
+  <!-- Nav callout -->
+  <line class="callout-line" x1="460" y1="60" x2="520" y2="55" />
+  <text class="callout" x="524" y="52">nav bar</text>
+
+  <!-- === HEADING === -->
+  <line class="wireframe-line" x1="80" y1="105" x2="320" y2="105" />
+  <line class="wireframe-line" x1="80" y1="120" x2="240" y2="120" />
+
+  <!-- Heading callout -->
+  <rect class="section-box" x="72" y="92" width="260" height="38" />
+  <text class="callout" x="524" y="112">heading</text>
+  <line class="callout-line" x1="332" y1="110" x2="520" y2="110" />
+
+  <!-- === PARAGRAPH TEXT === -->
+  <line class="wireframe-line-text" x1="80" y1="150" x2="380" y2="150" />
+  <line class="wireframe-line-text" x1="80" y1="162" x2="360" y2="162" />
+  <line class="wireframe-line-text" x1="80" y1="174" x2="370" y2="174" />
+  <line class="wireframe-line-text" x1="80" y1="186" x2="300" y2="186" />
+
+  <!-- Paragraph callout -->
+  <rect class="section-box" x="72" y="140" width="316" height="56" />
+  <text class="callout" x="524" y="170">paragraph</text>
+  <line class="callout-line" x1="388" y1="168" x2="520" y2="168" />
+
+  <!-- === IMAGE PLACEHOLDER === -->
+  <rect class="image-placeholder" x="80" y="212" width="180" height="120" />
+  <line class="image-x" x1="80" y1="212" x2="260" y2="332" />
+  <line class="image-x" x1="260" y1="212" x2="80" y2="332" />
+  <text class="image-label" x="170" y="276">image</text>
+
+  <!-- Image callout -->
+  <text class="callout" x="524" y="274">image</text>
+  <line class="callout-line" x1="262" y1="272" x2="520" y2="272" />
+
+  <!-- === EXTRA CONTENT beside image === -->
+  <line class="wireframe-line-text" x1="280" y1="224" x2="440" y2="224" />
+  <line class="wireframe-line-text" x1="280" y1="236" x2="420" y2="236" />
+  <line class="wireframe-line-text" x1="280" y1="248" x2="430" y2="248" />
+  <line class="wireframe-line-text" x1="280" y1="260" x2="380" y2="260" />
+
+  <!-- === FOOTER === -->
+  <rect x="60" y="348" width="420" height="32" fill="#E8E6DF" stroke="#091F2C" stroke-width="2" rx="4" ry="4" />
+  <line class="wireframe-line-thin" x1="160" y1="364" x2="380" y2="364" />
+
+  <!-- Footer callout -->
+  <line class="callout-line" x1="460" y1="364" x2="520" y2="364" />
+  <text class="callout" x="524" y="368">footer</text>
+</svg>

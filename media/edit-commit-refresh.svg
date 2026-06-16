@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 510" role="img" aria-label="Circular workflow diagram showing three steps that repeat: Edit your code on GitHub, Commit with a message, then Refresh your live site to see changes">
+  <title>The Edit, Commit, Refresh cycle</title>
+  <desc>Three large circles arranged in a triangle with curved arrows connecting them in a clockwise loop. Step 1 is Edit, Step 2 is Commit, Step 3 is Refresh. A label in the center says Repeat as needed.</desc>
+
+  <defs>
+    <marker id="curveArrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#0078D4" />
+    </marker>
+  </defs>
+
+  <style>
+    .step-circle { fill: #FFFFFF; stroke: #0078D4; stroke-width: 3; }
+    .step-num { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 16px; font-weight: 700; fill: #FFFFFF; text-anchor: middle; dominant-baseline: central; }
+    .step-label { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 22px; font-weight: 700; fill: #091F2C; text-anchor: middle; }
+    .step-desc { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 13px; font-weight: 400; fill: #444444; text-anchor: middle; }
+    .center-text { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 14px; font-weight: 600; fill: #0078D4; text-anchor: middle; font-style: italic; }
+    .num-bg { fill: #0078D4; }
+  </style>
+
+  <!-- Background -->
+  <rect width="540" height="510" fill="#FFFFFF" />
+
+  <!-- ===== STEP 1: EDIT (top center) ===== -->
+  <circle class="step-circle" cx="270" cy="110" r="72" />
+  <circle class="num-bg" cx="270" cy="38" r="16" />
+  <text class="step-num" x="270" y="38">1</text>
+  <!-- Pencil icon -->
+  <g transform="translate(270, 78)">
+    <path d="M -3,-14 L 3,-14 L 3,6 L 0,12 L -3,6 Z" fill="none" stroke="#0078D4" stroke-width="2" stroke-linejoin="round"/>
+    <line x1="-3" y1="6" x2="3" y2="6" stroke="#0078D4" stroke-width="1.5"/>
+    <line x1="-3" y1="-8" x2="3" y2="-8" stroke="#0078D4" stroke-width="1.5"/>
+  </g>
+  <text class="step-label" x="270" y="113">EDIT</text>
+  <text class="step-desc" x="270" y="133">Change your code</text>
+  <text class="step-desc" x="270" y="148">on GitHub</text>
+
+  <!-- ===== STEP 2: COMMIT (bottom right) ===== -->
+  <circle class="step-circle" cx="408" cy="360" r="72" />
+  <circle class="num-bg" cx="466" cy="318" r="16" />
+  <text class="step-num" x="466" y="318">2</text>
+  <!-- Checkmark icon -->
+  <g transform="translate(408, 326)">
+    <polyline points="-12,0 -4,10 14,-10" fill="none" stroke="#0078D4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text class="step-label" x="408" y="363">COMMIT</text>
+  <text class="step-desc" x="408" y="383">Save with a message:</text>
+  <text class="step-desc" x="408" y="398">"Fixed the colors"</text>
+
+  <!-- ===== STEP 3: REFRESH (bottom left) ===== -->
+  <circle class="step-circle" cx="132" cy="360" r="72" />
+  <circle class="num-bg" cx="74" cy="318" r="16" />
+  <text class="step-num" x="74" y="318">3</text>
+  <!-- Refresh/reload icon: 270° clockwise arc with arrowhead -->
+  <g transform="translate(132, 326)">
+    <path d="M 11,0 A 11,11 0 1,1 0,-11" fill="none" stroke="#0078D4" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="5,-11 0,-17 0,-6" fill="#0078D4"/>
+  </g>
+  <text class="step-label" x="132" y="363">REFRESH</text>
+  <text class="step-desc" x="132" y="383">Check your live site</text>
+  <text class="step-desc" x="132" y="398">to see the changes</text>
+
+  <!-- ===== CURVED ARROWS along circumscribed circle (270, 273, r=163) ===== -->
+  <!-- Arc 1: Edit exit → Commit entry (clockwise) -->
+  <path d="M 340,126 A 163,163 0 0,1 432,292" fill="none" stroke="#0078D4" stroke-width="2.5" marker-end="url(#curveArrow)" />
+
+  <!-- Arc 2: Commit exit → Refresh entry (clockwise) -->
+  <path d="M 357,411 A 163,163 0 0,1 183,411" fill="none" stroke="#0078D4" stroke-width="2.5" marker-end="url(#curveArrow)" />
+
+  <!-- Arc 3: Refresh exit → Edit entry (clockwise) -->
+  <path d="M 108,292 A 163,163 0 0,1 200,126" fill="none" stroke="#0078D4" stroke-width="2.5" marker-end="url(#curveArrow)" />
+
+  <!-- Center label -->
+  <text class="center-text" x="270" y="280">Repeat as needed!</text>
+
+  <!-- Bottom annotation -->
+  <text style="font-family: 'Segoe UI', system-ui, sans-serif; font-size: 13px; fill: #555555; text-anchor: middle; font-style: italic;" x="270" y="500">This is the same workflow professional developers use every day.</text>
+</svg>

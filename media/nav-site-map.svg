@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 280" role="img" aria-label="Site map diagram showing three HTML pages connected by navigation links: index.html links to page2.html and page3.html, and all pages link back to each other through a shared nav bar">
+  <title>How your pages connect with nav links</title>
+  <desc>Three page icons labeled index.html, page2.html, and page3.html arranged in a triangle. Double-headed arrows connect each pair, showing that the nav bar on every page lets visitors jump to any other page.</desc>
+
+  <defs>
+    <marker id="navArrowEnd" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#0078D4" />
+    </marker>
+    <marker id="navArrowStart" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <polygon points="8 0, 0 3, 8 6" fill="#0078D4" />
+    </marker>
+  </defs>
+
+  <style>
+    .page-box { fill: #FFFFFF; stroke: #0078D4; stroke-width: 2; rx: 8; ry: 8; }
+    .page-tab { fill: #0078D4; rx: 4; ry: 4; }
+    .page-name { font-family: 'Consolas', 'Courier New', monospace; font-size: 14px; font-weight: 700; fill: #091F2C; text-anchor: middle; }
+    .page-desc { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 11px; fill: #555555; text-anchor: middle; }
+    .page-icon { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 11px; fill: #FFFFFF; text-anchor: middle; font-weight: 600; }
+    .link-label { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 10px; fill: #0078D4; text-anchor: middle; font-style: italic; }
+    .title-text { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 16px; font-weight: 700; fill: #091F2C; text-anchor: middle; }
+    .subtitle { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 12px; fill: #555555; text-anchor: middle; }
+  </style>
+
+  <!-- Background -->
+  <rect width="520" height="280" fill="#FFFFFF" />
+
+  <!-- Title -->
+  <text class="title-text" x="260" y="24">How your pages connect</text>
+  <text class="subtitle" x="260" y="42">Every page has a nav bar linking to the others</text>
+
+  <!-- === index.html (top center) === -->
+  <rect class="page-box" x="185" y="58" width="150" height="64" />
+  <rect class="page-tab" x="185" y="58" width="50" height="18" />
+  <text class="page-icon" x="210" y="71">HTML</text>
+  <text class="page-name" x="260" y="95">index.html</text>
+  <text class="page-desc" x="260" y="112">Home page</text>
+
+  <!-- === page2.html (bottom left) === -->
+  <rect class="page-box" x="30" y="186" width="150" height="64" />
+  <rect class="page-tab" x="30" y="186" width="50" height="18" />
+  <text class="page-icon" x="55" y="199">HTML</text>
+  <text class="page-name" x="105" y="223">page2.html</text>
+  <text class="page-desc" x="105" y="240">Your second page</text>
+
+  <!-- === page3.html (bottom right) === -->
+  <rect class="page-box" x="340" y="186" width="150" height="64" />
+  <rect class="page-tab" x="340" y="186" width="50" height="18" />
+  <text class="page-icon" x="365" y="199">HTML</text>
+  <text class="page-name" x="415" y="223">page3.html</text>
+  <text class="page-desc" x="415" y="240">Your third page</text>
+
+  <!-- === CONNECTING ARROWS (double-headed) === -->
+
+  <!-- index ↔ page2 -->
+  <line x1="200" y1="126" x2="135" y2="182" stroke="#0078D4" stroke-width="2" />
+  <polygon points="205,122 201,130 197,125" fill="#0078D4" />
+  <polygon points="130,186 138,183 134,179" fill="#0078D4" />
+  <text class="link-label" x="148" y="150">&lt;nav&gt;</text>
+
+  <!-- index ↔ page3 -->
+  <line x1="320" y1="126" x2="385" y2="182" stroke="#0078D4" stroke-width="2" />
+  <polygon points="315,122 319,130 323,125" fill="#0078D4" />
+  <polygon points="390,186 382,183 386,179" fill="#0078D4" />
+  <text class="link-label" x="372" y="150">&lt;nav&gt;</text>
+
+  <!-- page2 ↔ page3 -->
+  <line x1="186" y1="218" x2="334" y2="218" stroke="#0078D4" stroke-width="2" />
+  <polygon points="180,218 188,221 188,215" fill="#0078D4" />
+  <polygon points="340,218 332,221 332,215" fill="#0078D4" />
+  <text class="link-label" x="260" y="212">&lt;nav&gt;</text>
+
+  <!-- Bottom note -->
+  <text style="font-family: 'Segoe UI', system-ui, sans-serif; font-size: 11px; fill: #555555; text-anchor: middle; font-style: italic;" x="260" y="270">Click a nav link on any page → jump to that page</text>
+</svg>
