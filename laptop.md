@@ -1,8 +1,3 @@
----
-title: Student Guide (Laptop)
-nav_order: 2
----
-
 # Using GitHub & AI to Create & Host Websites — Student Activity Guide (Laptop)
 
 Welcome! Today you'll design a website on paper, learn about source control, create a GitHub account, and use AI assistants — like **GitHub Copilot** and **Microsoft Copilot** — to build and publish your very own website — live on the internet. No experience needed — just curiosity!

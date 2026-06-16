@@ -1,7 +1,3 @@
----
-title: Instructor Guide (Laptop)
----
-
 # Using GitHub & AI to Create & Host Websites
 
 ## Instructor Lesson Plan — 3-Hour Training Session (Laptop)

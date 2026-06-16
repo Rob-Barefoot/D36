@@ -1,10 +1,2 @@
+theme: minima
 title: "Using GitHub & AI to Create & Host Websites"
-description: "Student Activity Guide"
-remote_theme: just-the-docs/just-the-docs
-
-# Hide instructor pages from nav
-defaults:
-  - scope:
-      path: "instructor"
-    values:
-      nav_exclude: true
